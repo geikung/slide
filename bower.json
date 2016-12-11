@@ -1,0 +1,21 @@
+{
+  "name": "slide.geikung",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "geikung"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/geikung/slide",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "^3.3.0"
+  }
+}

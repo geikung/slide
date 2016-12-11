@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title App#1
+
+    meta(name="description" content="A framework for easily creating presentations")
+    meta(name="author" content="Hakim El Hattab")
+
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+
+    meta(name="viewport" content="width=device-width,"
+                                +"initial-scale=1.0,"
+                                +"maximum-scale=1.0,"
+                                +"user-scalable=no")
+
+    link(rel="stylesheet" href="/static/vendor/reveal.js/css/reveal.css")
+    link(rel="stylesheet" href="/static/vendor/reveal.js/css/theme/black.css")
+
+  body
+    .reveal
+      .slides
+        section.
+          1
+        section.
+          2
+    script(src="/static/vendor/headjs/dist/1.0.0/head.min.js")
+    script(src="/static/vendor/reveal.js/js/reveal.js")
+    script.
+      Reveal.initialize({
+        history: true
+      });
