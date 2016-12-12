@@ -10,6 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "nodemon server.js -e js,jade,pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

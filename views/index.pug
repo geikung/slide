@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Index
+    link(rel='icon', href='/static/favicon.ico')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css')
+    link(rel='stylesheet', href='/static/css/app.css')
+
+  body
+
+    .hero.is-primary
+      .hero-head
+        header.nav
+          .container
+            .nav-left
+              a.nav-item(src='#').
+                Slides
+
+      .hero-body
+        .container
+          each item, index in items
+            .box(onclick="javascript:window.open('/"+item.view+"')")
+              article.media
+                .media-left
+                  figure.image.is-64x64
+                    img(src=item.img, alt=item.view + '-image')
+                .media-content
+                  .content
+                    p.
+                      <strong>#{item.name}</strong> <small>by #{item.author}</small>
+                      <br/>
+                      #{item.description}

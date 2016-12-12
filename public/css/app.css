@@ -1,0 +1,17 @@
+.box {
+  cursor: pointer;
+}
+.box:hover {
+  background-color: whitesmoke;
+}
+
+.hero-head .nav-left a.nav-item {
+  font-size: 24px;
+}
+.hero-body {
+  background-color: #f5f5f5;
+}
+
+.hero.is-primary .title, .hero.is-primary .subtitle {
+  color: #000;
+}

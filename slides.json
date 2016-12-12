@@ -1,0 +1,16 @@
+[
+  {
+    "view": "app1",
+    "name": "App#1",
+    "author": "prasong.k",
+    "description": "app1...",
+    "img": "https://avatars-02.gitter.im/group/iv/3/57542c1dc43b8c60197700f1"
+  },
+  {
+    "view": "app2",
+    "name": "App#2",
+    "author": "prasong.k",
+    "description": "app2...",
+    "img": "http://bhiveworkspace.com/wp-content/uploads/2016/02/DO_Logo_vertical_blue_128_128.png"
+  }
+]
