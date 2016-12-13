@@ -27,7 +27,7 @@ app.get('/:file?', function (req, res) {
       // let list = files.join("<br/>")
       fs.readFile('./slides.json', 'utf8', (err, data) => {
           if (err) throw err;
-          let list = JSON.parse(data)
+          var list = JSON.parse(data)
 
           res.render('index', {items: list})
       });
