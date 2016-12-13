@@ -17,14 +17,6 @@ app.get('/:file?', function (req, res) {
     res.render(file)
   else if (file === undefined)
     fs.readdir(viewsDir, (err, files) => {
-      //remove default view in list
-      // let index = files.indexOf('default.pug');
-      // files.splice(index, 1);
-      //
-      // files = files.map( (t) => t.replace(".pug", "") )
-      // files = files.map( (t) => '<a href="/' + t + '">' + t + '</a>' )
-      //
-      // let list = files.join("<br/>")
       fs.readFile('./slides.json', 'utf8', (err, data) => {
           if (err) throw err;
           var list = JSON.parse(data)
