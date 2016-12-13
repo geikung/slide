@@ -9,7 +9,7 @@ env(__dirname + '/.env')
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 
-app.get('/:file?', function (req, res) {
+app.get('/:file?', (req, res) => {
   const file = req.params.file;
   const viewsDir = 'views';
 
@@ -26,10 +26,9 @@ app.get('/:file?', function (req, res) {
     })
   else
     res.render('default')
-
 })
 
 const port = process.env.PORT || 8080
-app.listen(port, function () {
+app.listen(port, () => {
   console.log('Example app listening on port '+port+'!')
 })
