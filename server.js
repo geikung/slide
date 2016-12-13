@@ -1,7 +1,10 @@
+var env = require('node-env-file')
 var express = require('express')
 var app = express()
 var jade = require('jade')
 var fs = require('fs')
+
+env(__dirname + '/.env')
 
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
@@ -34,6 +37,7 @@ app.get('/:file?', function (req, res) {
 
 })
 
-app.listen(3001, function () {
-  console.log('Example app listening on port 3001!')
+const port = process.env.PORT || 8080
+app.listen(port, function () {
+  console.log('Example app listening on port '+port+'!')
 })
